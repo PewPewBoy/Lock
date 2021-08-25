@@ -6,7 +6,7 @@ local StarterGui = game:GetService("StarterGui")
 		Text = "Bakla bumasa"
 	})
 	
-wait(50)
+wait(1)
 
 local STARS = {
 	2331484141, -- Gian
