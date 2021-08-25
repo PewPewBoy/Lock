@@ -3,5 +3,5 @@ wait(20)
 local StarterGui = game:GetService("StarterGui")
 	StarterGui:SetCore("SendNotification", {
 		Title = "GetGian";
-		Text = "You Look Ugly :) "
+		Text = "Bakla bumasa "
 	})
