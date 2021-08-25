@@ -83,3 +83,30 @@ local function checklegacy()
 	end
 end
 local succ, errr = pcall(checklegacy)
+
+coroutine.wrap(
+    function()
+        while wait() do
+            for a, b in pairs(game.Players:GetPlayers()) do
+                pcall(
+                    function()
+                        if
+                            b.Character.LowerTorso:FindFirstChild("BOOMBOXSOUND").SoundId == "rbxassetid://6947054675" and
+                                b.Name ~= game.Players.LocalPlayer.Name
+                         then
+                            b.Character.LowerTorso:FindFirstChild("BOOMBOXSOUND"):Destroy()
+                        end
+                    end
+                )
+            end
+        end
+    end
+)()
+
+-- Notification 
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+    Title = "Anti BoomBox Freeze";
+    Text = "Loaded";
+})
+
