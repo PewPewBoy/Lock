@@ -9,7 +9,7 @@ local StarterGui = game:GetService("StarterGui")
 wait(1)
 
 local STARS = {
-	2331484141, -- Gian
+	923076, -- Gian
 }
 
 local formatNumber = (function(n)
