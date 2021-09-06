@@ -36,11 +36,11 @@ local tableinsert = table.insert
 -- // Silent Aim Vars
 getgenv().Aiming = {
     Enabled = true,
-    ShowFOV = false,
+    ShowFOV = true,
     FOVSides = 60,
     FOVColour = Color3fromRGB(231, 84, 128),
     VisibleCheck = true,
-    FOV = 13,
+    FOV = 32,
     HitChance = 100,
     Selected = LocalPlayer,
     SelectedPart = nil,
@@ -54,7 +54,7 @@ getgenv().Aiming = {
         },
         Players = {
             LocalPlayer,
-            91318356
+            923076
         }
     }
 }
@@ -300,7 +300,7 @@ function Aiming.GetClosestTargetPartToCursor(Character)
     -- // Vars
     local ClosestPart = nil
     local ClosestPartPosition = nil
-    local ClosestPartOnScreen = false
+    local ClosestPartOnScreen = true
     local ClosestPartMagnitudeFromMouse = nil
     local ShortestDistance = 1/0
 
