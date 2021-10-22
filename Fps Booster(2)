@@ -1,5 +1,0 @@
-local StarterGui = game:GetService("StarterGui")
-	StarterGui:SetCore("SendNotification", {
-		Title = "GetGian";
-		Text = "Changed Loadstring Dm Shush#0999 To Get The New One"
-	})
